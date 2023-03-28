@@ -250,17 +250,17 @@ VALUES (102,2,'student', CAST('02-JAN-2020' AS DATE),'Owner of account is a stud
 
 --student table
 
-INSERT INTO student (userid,date_admitted,Phone,acad_group,status,acad_plan,Email) 
+INSERT INTO student (userid,date_admitted, term, Phone,acad_group,status,acad_plan,Email) 
 VALUES
-(2, CAST('11-JAN-2020' AS DATE),2698188961,'ADTED','Admitted','UNGD','eu.arcu@parturientmontes.co.uk'),
-(3, CAST('12-JAN-2020' AS DATE), 1592124061,'ADTED','Admitted','UNGD','Suspendisse.ac.metus@orciinconsequat.net'),
-(4,CAST('13-JAN-2020' AS DATE),5007398814,'ADTED','Pending','UNGD','auctor.quis@vellectusCum.edu'),
-(5,CAST('14-JAN-2020' AS DATE), 4487985429,'ADTED','Admitted','UNGD','augue.scelerisque.mollis@dictum.org'),
-(6,CAST('15-JAN-2020' AS DATE),5535518337,'ADTED','Pending','UNGD','erat.in@idrisus.co.uk'),
-(7,CAST('16-JAN-2020' AS DATE),6559651739,'ADTED','Pending','UNGD','egestas.blandit@odio.org'),
-(8,CAST('17-JAN-2020' AS DATE),8545832762,'ADTED','Admitted','UNGD','augue@tinciduntDonecvitae.net'),
-(9,CAST('18-JAN-2020' AS DATE),1609946360,'ADTED','Admitted','UNGD','Mauris@aliquetdiam.edu'),
-(10,CAST('19-JAN-2020' AS DATE),2534811484,'ADTED','Pending','UNGD','suscipit@orci.net');
+(2, CAST('11-JAN-2020' AS DATE),'ADTED',2698188961,'Admitted','UNGD','GCP', 'eu.arcu@parturientmontes.co.uk'),
+(3, CAST('12-JAN-2020' AS DATE),'ADTED',1592124061,'Admitted','UNGD','GCP','Suspendisse.ac.metus@orciinconsequat.net'),
+(4,CAST('13-JAN-2020' AS DATE),'ADTED',5007398814,'Pending','UNGD', 'GCP','auctor.quis@vellectusCum.edu'),
+(5,CAST('14-JAN-2020' AS DATE),'ADTED', 4487985429,'Admitted','UNGD','GCP','augue.scelerisque.mollis@dictum.org'),
+(6,CAST('15-JAN-2020' AS DATE),'ADTED',5535518337,'Pending','UNGD', 'GCP','erat.in@idrisus.co.uk'),
+(7,CAST('16-JAN-2020' AS DATE),'ADTED',6559651739,'Pending','UNGD', 'GCP','egestas.blandit@odio.org'),
+(8,CAST('17-JAN-2020' AS DATE),'ADTED',8545832762,'Admitted','UNGD', 'GCP','augue@tinciduntDonecvitae.net'),
+(9,CAST('18-JAN-2020' AS DATE),'ADTED',1609946360,'Admitted','UNGD', 'GCP','Mauris@aliquetdiam.edu'),
+(10,CAST('19-JAN-2020' AS DATE),'ADTED',2534811484,'Pending','UNGD', 'GCP','suscipit@orci.net');
 
 --Instructor table
 
@@ -474,7 +474,6 @@ GROUP BY fees_change.change_date;
 			  
 			  
 			  
-
 
 
 
